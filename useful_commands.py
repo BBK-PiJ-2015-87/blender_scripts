@@ -71,4 +71,12 @@ bpy.context.scene.cursor_location
 #get selected objects
 bpy.context.selected_objects
 
+# all scene objects in a list
+list(bpy.data.objects)
+
+
+# all scene objects
+bpy.data.objects['name_of_the_object'].location
+
+
 manipulator

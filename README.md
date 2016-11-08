@@ -15,8 +15,11 @@ Ctrl + Alt + Shift + C → Origin to 3D Cursor to update or change the object or
 
 
 
-
-find position of 1 pivot point 
-find position of 2 pivot point
+move pivot points to center of objects
+find position of 1 pivot point  (bpy.data.objects['Sphere1'].location)
+find position of 2 pivot point (bpy.data.objects['Sphere2'].location)
 find the mid point of these pivot points
 move (or translate ) objects using coordinates of mid point 
+
+1. moveto = bpy.data.objects['Sphere'].location * (-1) //find inverse vector to use in translation
+2. bpy.ops.transform.translate(value=moveto)
